@@ -1,0 +1,43 @@
+.footer-bs{
+    position: absolute;
+    background-color: #f8f9fa;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 5px;
+    bottom: 40px;
+    left: 0;
+}
+.navbar-custom {
+    background-color: #2e8d09;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.clock-2{
+    background-color: #000;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.hr-line{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.disabled-control{
+    color: #888; /* Set the text color to a gray tone */
+    text-decoration: none; /* Remove underline */
+    cursor: not-allowed; /* Set the cursor to indicate not allowed */
+}
