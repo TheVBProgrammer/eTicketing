@@ -81,7 +81,11 @@ class ComponentHelper
      */
     public function CheckCurrentRole($role): bool
     {
-        $userRoles=auth()->user()->getGroups();
+        if(auth()->loggedIn()){
+            $userRoles=auth()->user()->getGroups();
+        }else{
+            $userRoles=[];
+        }
         $result=false;
         if (in_array($role, $userRoles))
         {
