@@ -15,6 +15,9 @@ $routes->group('master-file/catalog',function($routes){
     $routes->get('category-group','CategoryGroupController::index',['filter'=>'groupfilter:admin']);
     $routes->get('office','OfficeController::index',['filter'=>'groupfilter:admin']);
     $routes->get('office/create','OfficeController::create',['filter'=>'groupfilter:admin']);
+    $routes->post('office/create','OfficeController::create',['filter'=>'groupfilter:admin']);
+    $routes->post('office/update/(:num)','OfficeController::update/$1',['filter'=>'groupfilter:admin']);
+    $routes->get('office/update/(:num)','OfficeController::update/$1',['filter'=>'groupfilter:admin']);
     $routes->get('office-type','OfficeTypeController::index',['filter'=>'groupfilter:admin']);
 });
 
@@ -28,7 +31,8 @@ $routes->group('tracking/support',function($routes){
 
 $routes->group('management',function($routes){
     $routes->get('users','UsersController::index',['filter'=>'groupfilter:user']);
-    $routes->get('register','UsersController::update',['filter'=>'groupfilter:user']);
+    $routes->get('users/update/(:num)','UsersController::update/$1',['filter'=>'groupfilter:user']);
+    $routes->post('users/update/(:num)','UsersController::update/$1',['filter'=>'groupfilter:user']);
     $routes->post('register','UsersController::update',['filter'=>'groupfilter:admin']);
     $routes->get('roles/assign','RolesController::index',['filter'=>'groupfilter:admin']);
     $routes->post('roles/assign','RolesController::index',['filter'=>'groupfilter:admin']);

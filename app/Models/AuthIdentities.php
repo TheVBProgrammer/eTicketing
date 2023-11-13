@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User extends Model
+class AuthIdentities extends Model
 {
-    protected $table            = 'users';
+    protected $table            = 'auth_identities';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id','username','status','status_message','active','last_active','created_at','updated_at','deleted_at'];
+    protected $allowedFields    = ['user_id','type','secret','secret2','updated_at'];
 
     // Dates
     protected $useTimestamps = false;
@@ -23,14 +23,9 @@ class User extends Model
 
     // Validation
     protected $validationRules      = [
-        'username'  => 'required|min_length[3]|max_length[30]',
-        'status'  => 'min_length[3]|max_length[255]',
-        'status_message'  => 'min_length[3]|max_length[255]',
-        'active'  => 'required|integer',
-        'last_active'=>'valid_date ',
-        'created_at'=>'valid_date ',
-        'updated_at'=>'valid_date ',
-        'deleted_at'=>'valid_date '
+        'user_id' => 'required|integer',
+        'secret'  => 'required|min_length[3]|max_length[255]',
+        'secret2'  => 'min_length[6]|max_length[255]'
     ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;

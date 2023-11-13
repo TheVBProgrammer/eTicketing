@@ -34,7 +34,12 @@ class CategoriesHelper
         $priority=new Priority();
         return $priority->select("priority_id as id, priority as value")->orderBy('priority','ASC')->findAll();
     }
-
+    public function getOfficeType(){
+        $office_type=new OfficeType();
+        return $office_type->select('office_type_id as id, office_type as value')
+            ->orderBy('office_type')
+            ->findAll();
+    }
     /**
      * @return array
      */

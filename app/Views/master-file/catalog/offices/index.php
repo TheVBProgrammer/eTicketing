@@ -6,6 +6,11 @@
     <div class="card card-default">
         <div class="card-heading"></div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <button onclick="BootboxModal('Add New Office','/master-file/catalog/office/create',true,size.NORMAL,bootbox_type.PRIMARY,true,true)" class="btn btn-primary btn-sm mb-2"><i class="fa fa-user-plus"></i> Add New Office</button>
+                </div>
+            </div>
             <table id="tbl_offices" class="table table-bordered table-striped table-hover table-responsive">
                 <thead class="bg-primary">
                 <tr>
@@ -27,7 +32,7 @@
                     echo "<td>$record[office_type]</td>";
                     echo "<td>$record[description]</td>";
                     echo "<td style='text-align: center'>";
-                    echo "<button class='btn btn-success btn-sm mr-1' id='editRow'><i class='fa fa-edit'></i> Edit</button>";
+                    echo "<button onclick='BootboxModal(\"Edit Office\",\"/master-file/catalog/office/update/$record[office_id]\",true,size.NORMAL,bootbox_type.PRIMARY,true,true)' class='btn btn-success btn-sm'><i class='fa fa-edit'></i></button>";
                     //echo "<button class='btn btn-danger btn-sm' id='deleteRow'><i class='fa fa-trash'></i> Delete</button>";
                     echo "</td>";
                     echo '</tr>';
