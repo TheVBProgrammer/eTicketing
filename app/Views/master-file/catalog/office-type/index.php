@@ -1,4 +1,4 @@
-<?php session()->set('breadcrumb_title', 'Offices');?>
+<?php session()->set('breadcrumb_title', 'Office Type');?>
 <?= $this->extend('layout/admin_template'); ?>
 <?= $this->section('content'); ?>
 

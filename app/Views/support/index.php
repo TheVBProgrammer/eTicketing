@@ -45,7 +45,7 @@
                             }else{
                                 echo "<span class='btn btn-success btn-sm mr-1 disabled'><i class='fa fa-ticket-alt'></i></span>";
                             }
-                            echo "<a href='' class='btn btn-danger btn-sm' title='Delete ticket' data-confirm='Are you sure you want to delete this ticket?' data-method='post'><span class='fa fa-trash'></span></a>";
+                            echo "<a href='' class='btn-sm' title='Delete ticket' data-confirm='Are you sure you want to delete this ticket?' data-method='post'><span class='fa fa-trash'></span></a>";
                             echo "</td>";
                             echo '</tr>';
                         }
