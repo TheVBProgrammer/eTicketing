@@ -14,6 +14,7 @@ $routes->group('master-file/catalog',function($routes){
     $routes->get('categories/index','CategoriesController::index',['filter'=>'groupfilter:admin']);
     $routes->get('category-group','CategoryGroupController::index',['filter'=>'groupfilter:admin']);
     $routes->get('office','OfficeController::index',['filter'=>'groupfilter:admin']);
+    $routes->get('office/create','OfficeController::create',['filter'=>'groupfilter:admin']);
     $routes->get('office-type','OfficeTypeController::index',['filter'=>'groupfilter:admin']);
 });
 

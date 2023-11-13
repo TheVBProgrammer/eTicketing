@@ -1,5 +1,10 @@
 <?php
-
+/* Date: November 11, 2023 10:20 PM
+ * Author: Nolan F. Sunico
+ * Project: eTicketing System
+ * Module Class: ComponentHelper
+ * This Helper will provide functionality to eticketing system
+ */
 namespace App\Components;
 
 class ComponentHelper
@@ -87,6 +92,7 @@ class ComponentHelper
             $userRoles=[];
         }
         $result=false;
+        // Search and match roles
         if (in_array($role, $userRoles))
         {
             //'User that specific role.';

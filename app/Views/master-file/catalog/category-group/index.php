@@ -23,9 +23,9 @@
                     echo "<td>$record[category_group_id]</td>";
                     echo "<td>$record[category_group_name]</td>";
                     echo "<td style='text-align: center'>";
-                    echo "<button class='btn btn-primary btn-sm mr-1' id='viewRow'><i class='fa fa-eye'></i> View</button>";
+                    //echo "<button class='btn btn-primary btn-sm mr-1' id='viewRow'><i class='fa fa-eye'></i> View</button>";
                     echo "<button class='btn btn-success btn-sm mr-1' id='editRow'><i class='fa fa-edit'></i> Edit</button>";
-                    echo "<button class='btn btn-danger btn-sm' id='deleteRow'><i class='fa fa-trash'></i> Delete</button>";
+                    //echo "<button class='btn btn-danger btn-sm' id='deleteRow'><i class='fa fa-trash'></i> Delete</button>";
                     echo "</td>";
                     echo '</tr>';
                 }

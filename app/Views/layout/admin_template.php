@@ -24,7 +24,7 @@ $breadcrumbs_title=session()->get('breadcrumb_title');
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; 2023 <a href="https://www.linkedin.com/in/nolan-sunico-4552ab39/">Nolan F. Sunico</a>.</strong>
+        <strong>Copyright &copy; 2023 <a href="https://www.linkedin.com/in/nolan-sunico-4552ab39/">AdminLTE.io.</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 1.0.0

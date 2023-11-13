@@ -1,4 +1,10 @@
 <?php
+/* Date: November 11, 2023 10:20 PM
+ * Author: Nolan F. Sunico
+ * Project: eTicketing System
+ * Module Class: CategoriesHelper
+ * This Helper will provide functionality to eticketing system
+ */
 namespace App\Components;
 
 use App\Models\Category;
